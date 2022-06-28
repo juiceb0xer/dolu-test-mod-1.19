@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod",
+  "version": "${version}",
+
+  "name": "Dolu's Test Mod",
+  "description": "Just for testing!",
+  "authors": [
+    "Dolu"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT Licence",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dolu.testmod.TestMod"
+    ],
+    "client": [
+      "net.dolu.testmod.TestModClient"
+    ]
+  },
+  "mixins": [
+    "testmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
